@@ -1,13 +1,14 @@
 # get slim base image for python
 FROM python:3.9.17-slim-bullseye as builder
+FROM python:3.9.17-slim-bullseye as builder
 
 RUN apt-get -y update && apt-get install -y --no-install-recommends \
          ca-certificates \
          dos2unix \
-         gcc \
-         g++ \
-    && rm -rf /var/lib/apt/lists/* && \
-    apt-get install libgomp1 -y
+         default-jre \
+    && rm -rf /var/lib/apt/lists/*
+
+
 
 COPY ./requirements/requirements.txt /opt/
 RUN pip3 install --no-cache-dir -r /opt/requirements.txt
