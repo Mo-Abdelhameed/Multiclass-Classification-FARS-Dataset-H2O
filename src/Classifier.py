@@ -30,7 +30,7 @@ class Classifier:
         x.remove(schema.id)
         x.remove(schema.target)
         self.y = schema.target
-        self.aml = H2OAutoML(max_models=5, seed=10, nfolds=10, verbosity='info')
+        self.aml = H2OAutoML(max_models=2, seed=10, nfolds=10, verbosity='info')
         self.x = x
         self.training_df[schema.target] = self.training_df[schema.target].asfactor()
 
