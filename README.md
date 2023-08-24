@@ -194,12 +194,7 @@ The following is a list of features in the dataset, grouped by category.
   - `fars_test.csv`: Contains the test data in CSV format. The file does not contain the target column.
 - `docs/`: Contains the documentation for the dataset.
   - `Fatality Analysis Reporting System Analytical User’s Manual, 1975-2021.pdf`: This is the original documentation for the dataset sourced directly from FARS. This comprehensive manual contains more information on each of the features in the dataset.
-- `License.md`: Contains the license information for this project.
 - `README.md`: Provides an overview and detailed description of the project, including how to use and understand the dataset.
-
-## License
-
-This project, including the code, analyses, and documentation, is licensed under the MIT License. However, please note that the dataset is sourced from the **FARS** and is in the public domain. You can find detailed licensing information in our [LICENSE.md](LICENSE.md) file.
 
 ## Contact Information
 
